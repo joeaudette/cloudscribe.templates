@@ -60,42 +60,42 @@ namespace cloudscribeTemplate
             txtNonRootPagesTitle.KeyPress += TxtNonRootPagesTitle_KeyPress;
             txtNonRootPagesTitle.TextChanged += TxtNonRootPagesTitle_TextChanged;
 
-            LinkLabel.Link chatLink = new LinkLabel.Link();
-            chatLink.LinkData = "https://www.cloudscribe.com/forum?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
-            lnkChat.Links.Add(chatLink);
+            //LinkLabel.Link chatLink = new LinkLabel.Link();
+            //chatLink.LinkData = "https://www.cloudscribe.com/forum?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
+            //lnkChat.Links.Add(chatLink);
 
             LinkLabel.Link link = new LinkLabel.Link();
             link.LinkData = "https://www.cloudscribe.com/docs/advanced-client-side-development-with-webpack?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
             lnkWebpack.Links.Add(link);
 
 
-            LinkLabel.Link formsLink = new LinkLabel.Link();
-            formsLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-forms-and-surveys-solution?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
-            lnkFormProduct.Links.Add(formsLink);
+            //LinkLabel.Link formsLink = new LinkLabel.Link();
+            //formsLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-forms-and-surveys-solution?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
+            //lnkFormProduct.Links.Add(formsLink);
 
 
-            LinkLabel.Link newsLetterLink = new LinkLabel.Link();
-            newsLetterLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-newsletter-solution?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
-            lnkNewsletter.Links.Add(newsLetterLink);
+            //LinkLabel.Link newsLetterLink = new LinkLabel.Link();
+            //newsLetterLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-newsletter-solution?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
+            //lnkNewsletter.Links.Add(newsLetterLink);
 
 
-            LinkLabel.Link paywallLink = new LinkLabel.Link();
-            paywallLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-membership-paywall?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
-            lnkPaywall.Links.Add(paywallLink);
+            //LinkLabel.Link paywallLink = new LinkLabel.Link();
+            //paywallLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-membership-paywall?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
+            //lnkPaywall.Links.Add(paywallLink);
 
 
-            LinkLabel.Link stripeLink = new LinkLabel.Link();
-            stripeLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-stripe-integration?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
-            lnkStripeIntegration.Links.Add(stripeLink);
+            //LinkLabel.Link stripeLink = new LinkLabel.Link();
+            //stripeLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-stripe-integration?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
+            //lnkStripeIntegration.Links.Add(stripeLink);
 
 
-            LinkLabel.Link commentSystemLink = new LinkLabel.Link();
-            commentSystemLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-talkabout-comment-system?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
-            lnkCommentSystem.Links.Add(commentSystemLink);
+            //LinkLabel.Link commentSystemLink = new LinkLabel.Link();
+            //commentSystemLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-talkabout-comment-system?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
+            //lnkCommentSystem.Links.Add(commentSystemLink);
 
-            LinkLabel.Link forumLink = new LinkLabel.Link();
-            forumLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-talkabout-forums?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
-            lnkForum.Links.Add(forumLink);
+            //LinkLabel.Link forumLink = new LinkLabel.Link();
+            //forumLink.LinkData = "https://www.cloudscribe.com/products/cloudscribe-talkabout-forums?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";
+            //lnkForum.Links.Add(forumLink);
 
             LinkLabel.Link dynAuthLink = new LinkLabel.Link();
             dynAuthLink.LinkData = "https://www.cloudscribe.com/dynamic-authorization-policies?utm_source=projecttemplate&utm_medium=referral&utm_campaign=newproject-vsix";

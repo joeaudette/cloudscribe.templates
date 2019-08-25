@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="BF86E518-8D3E-48CB-823F-1033B7F486DE" Version="1.83" Language="en-US" Publisher="Joe Audette" />
+        <Identity Id="BF86E518-8D3E-48CB-823F-1033B7F486DE" Version="1.84" Language="en-US" Publisher="Joe Audette" />
         <DisplayName>cloudscribe Project Template</DisplayName>
         <Description xml:space="preserve">A Visual Studio extension that makes it easy to start new web application projects using cloudscribe libraries</Description>
         <MoreInfo>https://www.cloudscribe.com/docs/introduction</MoreInfo>

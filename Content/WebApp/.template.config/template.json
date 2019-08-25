@@ -45,35 +45,9 @@
             "Views/Contact/**"
           ]
         },
+       
         {
-          "condition": "(!CommentSystem && !Forum)",
-          "exclude": [
-            "Views/Shared/TalkAboutCoreImageModalContent.cshtml",
-          ]
-        },
-        {
-          "condition": "(!CommentSystem)",
-          "exclude": [
-            "Views/Shared/TalkAboutImageModalContent.cshtml"
-          ]
-        },
-        {
-          "condition": "(!Forum)",
-          "exclude": [
-            "Views/Shared/TalkAboutForumImageModalContent.cshtml"
-          ]
-        },
-        {
-          "condition": "(!CommentSystem || SimpleContentConfig == 'z')",
-          "exclude": [
-            "Views/Shared/CommentScriptsPartial.cshtml",
-            "Views/Shared/CommentStylePartial.cshtml",
-            "Views/Blog/**",
-            "Views/Page/**"
-          ]
-        },
-        {
-          "condition": "(!KvpCustomRegistration && !Newsletter)",
+          "condition": "(!KvpCustomRegistration)",
           "exclude": [
             "app-userproperties.json",
             "Views/Account/RegisterMiddle.cshtml",
@@ -81,26 +55,14 @@
             "Views/UserAdmin/**"
           ]
         },
-        {
-          "condition": "(!Newsletter)",
-          "exclude": [
-            "Views/Account/RegisterBottom.cshtml",
-            "Views/Shared/_LayoutNewsletterHtml.cshtml",
-            "Views/Shared/_LayoutNewsletterPlainText.cshtml"
-          ]
-        },
+        
         {
           "condition": "(!IdentityServer)",
           "exclude": [
             "Config/IdentityServerIntegration.cs"
           ]
         },
-        {
-          "condition": "(!FormBuilder)",
-          "exclude": [
-            "Services/SampleFormSubmissionHandlers.cs"
-          ]
-        },
+        
         {
           "condition": "(!Webpack)",
           "exclude": [
@@ -217,40 +179,7 @@
       "description": "Include cloudscribe logging and log viewer UI."
     },
 
-    "FormBuilder": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "false",
-      "description": "Include cloudscribe Forms and Surveys add on product."
-    },
-
-    "Paywall": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "false",
-      "description": "Include cloudscribe Membership Paywall add on product. Cannot be used with NoDb or SQLite."
-    },
-
-    "Newsletter": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "false",
-      "description": "Include cloudscribe Newsletter/Email List add on product. Cannot be used with NoDb or SQLite."
-    },
-
-    "CommentSystem": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "false",
-      "description": "Include cloudscribe TalkAbout GDPR friendly comment system add on product."
-    },
-
-    "Forum": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "false",
-      "description": "Include cloudscribe TalkAbout GDPR friendly forum add on product."
-    },
+    
 
     "DynamicPolicy": {
       "type": "parameter",
@@ -305,14 +234,7 @@
       "value": "(Webpack && ReactSample)"
     },
    
-    "IncludeEmailQueue": {
-      "type": "computed",
-      "value": "(Paywall || Newsletter)"
-    },
-    "IncludeStripeIntegration": {
-      "type": "computed",
-      "value": "(Paywall)"
-    },
+    
     "SQLite": {
       "type": "computed",
       "value": "(DataStorage == \"SQLite\")"

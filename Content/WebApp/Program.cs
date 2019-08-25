@@ -68,7 +68,7 @@ namespace WebApp
             SimpleContentEFStartup.InitializeDatabaseAsync(scopedServices).Wait();
             #endif
             #endif
-            #if (KvpCustomRegistration || Newsletter) 
+            #if (KvpCustomRegistration) 
             #if (!NoDb)
             KvpEFCoreStartup.InitializeDatabaseAsync(scopedServices).Wait();
             #endif
@@ -80,47 +80,13 @@ namespace WebApp
             CloudscribeIdentityServerIntegrationEFCoreStorage.InitializeDatabaseAsync(scopedServices).Wait();
             #endif
             #endif
-            #if (FormBuilder)
-            #if (!NoDb)
-            FormsDatabase.InitializeDatabaseAsync(scopedServices).Wait();
-            #endif
-            #endif
-            #if (Paywall)
-            #if (!NoDb)
-            MembershipDatabase.InitializeDatabaseAsync(scopedServices).Wait();
-            #endif
-            #endif
-             #if (IncludeEmailQueue)
-            #if (!NoDb)
-            EmailQueueDatabase.InitializeDatabaseAsync(scopedServices).Wait();
-            EmailTemplateDatabase.InitializeDatabaseAsync(scopedServices).Wait();
-            #endif
-            #endif
-            #if (Newsletter)
-            #if (!NoDb)
-            EmailListDatabase.InitializeDatabaseAsync(scopedServices).Wait();
-            #endif
-            #endif
-            #if (IncludeStripeIntegration)
-            #if (!NoDb)
-            StripeDatabase.InitializeDatabaseAsync(scopedServices).Wait();
-            #endif
-            #endif
+            
             #if (DynamicPolicy)
             #if (!NoDb)
             DynamicPolicyEFCore.InitializeDatabaseAsync(scopedServices).Wait();
             #endif
             #endif
-            #if (CommentSystem)
-            #if (!NoDb)
-            CommentsDatabase.InitializeDatabaseAsync(scopedServices).Wait();
-            #endif
-            #endif
-            #if (Forum)
-            #if (!NoDb)
-            ForumDatabase.InitializeDatabaseAsync(scopedServices).Wait();
-            #endif
-            #endif
+            
 
             
 

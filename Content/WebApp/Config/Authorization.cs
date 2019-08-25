@@ -15,18 +15,6 @@ namespace Microsoft.Extensions.DependencyInjection
 
 #if (DynamicPolicy)
 
-
-#if (Paywall)
-
-            options.AddPolicy(
-               "MembershipJoinPolicy",
-               authBuilder =>
-               {
-                   authBuilder.RequireAuthenticatedUser();
-               });
-
-#endif
-
             options.AddPolicy(
                 "ServerAdminPolicy",
                 authBuilder =>
@@ -94,63 +82,6 @@ namespace Microsoft.Extensions.DependencyInjection
                     authBuilder.RequireRole("Administrators", "Content Administrators");
                 });
 
-#if (CommentSystem)
-           options.AddPolicy(
-                "CommentAdminPolicy",
-                authBuilder =>
-                {
-                    authBuilder.RequireRole("Administrators", "Content Administrators");
-                });
-
-            options.AddPolicy(
-                "CommentModerationPolicy",
-                authBuilder =>
-                {
-                    authBuilder.RequireRole("Administrators", "Content Administrators");
-                });
-#endif
-
-#if (Forum)
-           // this is to allow anonymous access, forums could be protected though by changing the policy
-            Func<AuthorizationHandlerContext, bool> forumHandler = (AuthorizationHandlerContext context) =>
-            {
-
-                return true;
-            };
-
-            options.AddPolicy(
-                "ForumViewPolicy",
-                authBuilder =>
-                {
-                    //authBuilder.RequireRole("Administrators");
-                    authBuilder.RequireAssertion(forumHandler);
-                });
-
-            options.AddPolicy(
-                "ForumAdminPolicy",
-                authBuilder =>
-                {
-                    authBuilder.RequireRole("Administrators", "Content Administrators");
-                });
-
-            options.AddPolicy(
-                "ForumPostPolicy",
-                authBuilder =>
-                {
-                    authBuilder.RequireAuthenticatedUser();
-                });
-            
-            options.AddPolicy(
-                "ForumModerationPolicy",
-                authBuilder =>
-                {
-                    authBuilder.RequireRole("Administrators", "Content Administrators");
-                });
-#endif
-
-
-            
-
 #if (IdentityServer)
             options.AddPolicy(
                     "IdentityServerAdminPolicy",
@@ -160,57 +91,6 @@ namespace Microsoft.Extensions.DependencyInjection
                     });
 #endif
 
-#if (FormBuilder)
-            options.AddPolicy(
-                "FormsAdminPolicy",
-                authBuilder =>
-                {
-                    authBuilder.RequireRole("Administrators", "Content Administrators");
-                });
-
-            options.AddPolicy(
-                "FormsChooserPolicy",
-                authBuilder =>
-                {
-                    authBuilder.RequireRole("Administrators", "Content Administrators");
-                });
-#endif
-
-#if (Paywall)
-            options.AddPolicy(
-               "MembershipAdminPolicy",
-               authBuilder =>
-               {
-                   authBuilder.RequireRole("Administrators");
-               });
-
-            options.AddPolicy(
-               "MembershipJoinPolicy",
-               authBuilder =>
-               {
-                   authBuilder.RequireAuthenticatedUser();
-               });
-
-#endif
-
-#if (IncludeStripeIntegration)
-            options.AddPolicy(
-               "StripeAdminPolicy",
-               authBuilder =>
-               {
-                   authBuilder.RequireRole("Administrators");
-               });
-
-#endif
-
-#if (Newsletter)
-            options.AddPolicy(
-                "EmailListAdminPolicy",
-                authBuilder =>
-                {
-                    authBuilder.RequireRole("Administrators");
-                });
-#endif
 
 #endif
 

@@ -91,15 +91,15 @@ namespace cloudscribeTemplate
 
                 replacementsDictionary.Add("passthrough:Webpack", _includeWebpack.ToString().ToLowerInvariant());
                 replacementsDictionary.Add("passthrough:ReactSample", _includeReactSample.ToString().ToLowerInvariant());
-
-
-                replacementsDictionary.Add("passthrough:FormBuilder", _includeFormBuilder.ToString().ToLowerInvariant());
-                replacementsDictionary.Add("passthrough:Newsletter", _includeNewsletter.ToString().ToLowerInvariant());
-                replacementsDictionary.Add("passthrough:Paywall", _includePaywall.ToString().ToLowerInvariant());
                 replacementsDictionary.Add("passthrough:DynamicPolicy", _includeDynamicPolicy.ToString().ToLowerInvariant());
 
-                replacementsDictionary.Add("passthrough:CommentSystem", _includeCommentSystem.ToString().ToLowerInvariant());
-                replacementsDictionary.Add("passthrough:Forum", _includeForum.ToString().ToLowerInvariant());
+                //replacementsDictionary.Add("passthrough:FormBuilder", _includeFormBuilder.ToString().ToLowerInvariant());
+                //replacementsDictionary.Add("passthrough:Newsletter", _includeNewsletter.ToString().ToLowerInvariant());
+                //replacementsDictionary.Add("passthrough:Paywall", _includePaywall.ToString().ToLowerInvariant());
+
+
+                //replacementsDictionary.Add("passthrough:CommentSystem", _includeCommentSystem.ToString().ToLowerInvariant());
+                //replacementsDictionary.Add("passthrough:Forum", _includeForum.ToString().ToLowerInvariant());
 
 
             }
@@ -173,12 +173,12 @@ namespace cloudscribeTemplate
                     _includeReactSample = false;
                 }
 
-                var gbCommercial = _dialog.Controls["gbCommercial"];
-                _includeFormBuilder = ((CheckBox)gbCommercial.Controls["chkFormBuilder"]).Checked;
-                _includeNewsletter = ((CheckBox)gbCommercial.Controls["chkNewsletter"]).Checked;
-                _includePaywall = ((CheckBox)gbCommercial.Controls["chkPaywall"]).Checked;
-                _includeCommentSystem = ((CheckBox)gbCommercial.Controls["chkCommentSystem"]).Checked;
-                _includeForum = ((CheckBox)gbCommercial.Controls["chkForum"]).Checked;
+                //var gbCommercial = _dialog.Controls["gbCommercial"];
+                //_includeFormBuilder = ((CheckBox)gbCommercial.Controls["chkFormBuilder"]).Checked;
+                //_includeNewsletter = ((CheckBox)gbCommercial.Controls["chkNewsletter"]).Checked;
+                //_includePaywall = ((CheckBox)gbCommercial.Controls["chkPaywall"]).Checked;
+                //_includeCommentSystem = ((CheckBox)gbCommercial.Controls["chkCommentSystem"]).Checked;
+                //_includeForum = ((CheckBox)gbCommercial.Controls["chkForum"]).Checked;
 
 
                 _dialog.Close();
